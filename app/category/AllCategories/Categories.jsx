@@ -80,41 +80,42 @@ function CategoriesPage({ filterBy = "" }) {
           const [quantity, setQuantity] = useState(1);
           const [isLoading, setIsLoading] = useState(false);
           const [showMassage, setshowMassage] = useState(false);
-          const handleGetQuote = () => {
-            setIsLoading(true);
-            const productData = {
-              name: item.name,
-              title: item.title,
-              quantity,
-              image: item.image,
-            };
+         const handleGetQuote = () => {
+  setIsLoading(true);
+  const productData = {
+    name: item.name,
+    title: item.title,
+    quantity,
+    image: item.image,
+  };
 
-            const existingQuotes =
-              JSON.parse(localStorage.getItem("quotes")) || [];
+  const existingQuotes = JSON.parse(localStorage.getItem("quotes")) || [];
 
-            const existingIndex = existingQuotes.findIndex(
-              (item) =>
-                item.name === productData.name &&
-                item.title === productData.title
-            );
+  const existingIndex = existingQuotes.findIndex(
+    (item) =>
+      item.name === productData.name && item.title === productData.title
+  );
 
-            if (existingIndex !== -1) {
-              existingQuotes[existingIndex].quantity += quantity;
-              localStorage.setItem("quotes", JSON.stringify(existingQuotes));
-            } else {
-              const updatedQuotes = [...existingQuotes, productData];
-              localStorage.setItem("quotes", JSON.stringify(updatedQuotes));
-              window.dispatchEvent(new Event("cartUpdated"));
-            }
+  if (existingIndex !== -1) {
+    existingQuotes[existingIndex].quantity += quantity;
+    localStorage.setItem("quotes", JSON.stringify(existingQuotes));
+  } else {
+    const updatedQuotes = [...existingQuotes, productData];
+    localStorage.setItem("quotes", JSON.stringify(updatedQuotes));
+  }
 
-            setTimeout(() => {
-              setIsLoading(false);
-              setshowMassage(true); // نظهر الرسالة
-              setTimeout(() => {
-                setshowMassage(false); // نخفيها بعد ثانية
-              }, 2000);
-            }, 1000); // أول ثانية للـ loading
-          };
+  // ✅ حل المشكلة: دايمًا بعت الحدث بعد التحديث
+  window.dispatchEvent(new Event("cartUpdated"));
+
+  setTimeout(() => {
+    setIsLoading(false);
+    setshowMassage(true);
+    setTimeout(() => {
+      setshowMassage(false);
+    }, 2000);
+  }, 1000);
+};
+
 
           return (
             <>
