@@ -1,0 +1,145 @@
+.footer {
+  background-color: #15141c;
+  padding: 2rem 7rem;
+}
+.footer h1 {
+  color: #fff;
+  width: 50%;
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 60px;
+  line-height: 1em;
+  letter-spacing: -0.02em;
+  word-wrap: break-word;
+  margin-bottom: 3rem;
+  margin-top: 5rem;
+}
+.row {
+  display: flex;
+}
+.lists ul li span {
+  font-family: Lato, sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #ff9;
+  line-height: 3rem;
+}
+.lists ul li {
+  margin-left: -2rem;
+}
+.lists ul li a {
+  color: #c1c1c1;
+  line-height: 2rem;
+  font-size: 19px;
+  text-decoration: none;
+  transition: color 1s;
+}
+.lists ul li a:hover {
+  color: #fff;
+}
+.light {
+  color: #fff !important;
+}
+.icon {
+  margin-left: 2rem;
+}
+.icon,
+.icon1 {
+  color: #0d639d !important;
+  transition: color 1s;
+}
+.icon:hover,
+.icon1:hover {
+  color: #fff !important;
+}
+.footer p {
+  margin-top: 4rem;
+  color: #c1c1c1;
+}
+@media screen and (max-width: 800px) {
+  .footer {
+    padding: 2rem;
+  }
+  .footer h1 {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 800px) and (max-width: 1200px) {
+  .footer h1 {
+    width: 85%;
+  }
+}
+
+@keyframes opacity {
+    0%
+    {
+        opacity: 0;
+    }
+    100%
+    {
+        opacity: 1;
+    }    
+}
+.button {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: rgb(20, 20, 20);
+  border: none;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 0px 0px 4px  #0d639d;
+  cursor: pointer;
+  transition-duration: 0.3s;
+  overflow: hidden;
+  position: fixed;
+  right: 2rem;
+  bottom: 2rem;
+  z-index: 999;
+  /* opacity: 0; 
+  animation: opacity 1s forwards; */
+}
+
+.svgIcon {
+  width: 12px;
+  transition-duration: 0.3s;
+}
+
+.svgIcon path {
+  fill: white;
+}
+
+.button:hover {
+  width: 140px;
+  border-radius: 50px;
+  transition-duration: 0.3s;
+  background-color: #0d639d;
+  align-items: center;
+  box-shadow: 0px 0px 0px 4px  #fff;
+}
+.button:hover .svgIcon {
+  /* width: 20px; */
+  transition-duration: 0.3s;
+  transform: translateY(-200%);
+}
+
+.button::before {
+  position: absolute;
+  bottom: -20px;
+  content: "Back to Top";
+  color: white;
+  /* transition-duration: .3s; */
+  font-size: 0px;
+}
+
+.button:hover::before {
+  font-size: 13px;
+  opacity: 1;
+  bottom: unset;
+  /* transform: translateY(-30px); */
+  transition-duration: 0.3s;
+}

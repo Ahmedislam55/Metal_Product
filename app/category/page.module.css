@@ -1,0 +1,12 @@
+@keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.portfolio {
+  opacity: 0;
+  animation: opacity 1s forwards ease-in-out
+}

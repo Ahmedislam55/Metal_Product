@@ -1,0 +1,67 @@
+.row {
+  margin: 7rem;
+  border: 1px solid #15141c;
+}
+.caption {
+  padding: 4rem 0rem;
+  width: 40%;
+  padding-left: 3rem;
+}
+.caption h2 {
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #15141c;
+  font-size: 30px;
+  line-height: 1em;
+  letter-spacing: -0.01em;
+  word-wrap: break-word;
+}
+.caption h3 {
+  color: #0d639d;
+  font-family: "Space Grotesk", Sans-serif;
+  font-size: 30px;
+  font-weight: 600;
+}
+.image {
+  width: 60%;
+  background-image: url(https://manufaktursolutions.qodeinteractive.com/wp-content/uploads/2022/10/home-5-background-image.jpg);
+}
+@media screen and (max-width: 500px) {
+  .row {
+    margin: 7rem 1rem;
+  }
+  .caption {
+    width: 100%;
+    padding: 4rem 0rem;
+    padding-left: 1rem;
+  }
+  .image {
+    display: none;
+  }
+  .caption h2 {
+    font-size: 20px;
+  }
+  .caption h3 {
+    font-size: 20px;
+  }
+}
+@media screen and (min-width: 500px) and (max-width: 800px) {
+  .row {
+    margin: 7rem 1rem;
+  }
+  .caption {
+    width: 100%;
+  }
+  .image {
+    display: none;
+  }
+}
+@media screen and (min-width: 800px) and (max-width: 1300px) {
+  .row {
+    margin: 7rem 1rem;
+  }
+  .caption {
+    padding-left: 1rem;
+  }
+}

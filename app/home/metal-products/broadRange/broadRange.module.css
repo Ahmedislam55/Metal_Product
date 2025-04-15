@@ -1,0 +1,193 @@
+.broadRange {
+  margin: 7rem;
+}
+.items p {
+  font-family: Lato, sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: -0.02em;
+  display: inline-flex;
+  vertical-align: middle;
+  flex-wrap: wrap;
+  color: #0d639d;
+  position: relative;
+}
+.items p::before {
+  position: absolute;
+  content: "______";
+  color: #0d639d;
+  left: 100%;
+  margin-left: 0.8rem;
+  top: -5px;
+  font-weight: 500;
+}
+.item h1 {
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #15141c;
+  font-size: 60px;
+  line-height: 1em;
+  letter-spacing: -0.02em;
+  margin: 25px 0;
+  -ms-word-wrap: break-word;
+  word-wrap: break-word;
+  width: 50%;
+}
+.item {
+  position: relative;
+  margin-bottom: 1rem;
+}
+.buttons {
+  position: absolute;
+  z-index: 9;
+  right: 0;
+  top: 50%;
+  display: flex;
+  align-items: center;
+}
+.button {
+  background-color: transparent;
+  border: 1px solid #adadb9;
+  font-family: Lato, sans-serif;
+  font-size: 17px;
+  font-weight: 700;
+  transition: background-color 1s, color 1s;
+  width: 120px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #0d639d;
+}
+
+.button a {
+  text-decoration: none;
+  color: #15141c;
+  transition: color 1s;
+}
+
+.button:hover a {
+  color: #fff;
+}
+
+.icon {
+  border: 1px solid #adadb9;
+  border-left: 0;
+  background-color: transparent;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  padding-left: 1.5rem;
+}
+
+.icons {
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.faAngleRight,
+.faAngleRighttwo {
+  color: #0d639d;
+  width: 20px;
+  transition: all 0.5s;
+}
+
+.faAngleRighttwo {
+  transform: translateX(-60px);
+}
+
+.icon:hover .faAngleRight {
+  transform: translateX(50px);
+}
+
+.icon:hover .faAngleRighttwo {
+  transform: translateX(-15px);
+}
+.row {
+  display: flex;
+  justify-content: space-evenly;
+}
+.hidden {
+  overflow: hidden;
+}
+.image {
+  width: 100%;
+  transition: all 0.5s;
+}
+.images:hover .image {
+  transform: scale(1.5);
+}
+.images {
+  width: 20%;
+  cursor: pointer;
+}
+.images h6 {
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #15141c;
+  font-size: 20px;
+  line-height: 1.2em;
+  letter-spacing: -0.02em;
+  margin-top: 1rem;
+}
+@media screen and (max-width: 500px) {
+  .broadRange {
+    margin: 7rem 2rem;
+  }
+  .item h1 {
+    width: 100%;
+    font-size: 30px;
+  }
+  .buttons {
+    position: static;
+  }
+  .images {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 500px) and (max-width: 700px) {
+  .broadRange {
+    margin: 7rem 2rem;
+  }
+  .item h1 {
+    width: 100%;
+  }
+  .buttons {
+    position: static;
+  }
+  .images {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 700px) and (max-width: 900px) {
+  .broadRange {
+    margin: 7rem 2rem;
+  }
+  .item h1 {
+    width: 80%;
+  }
+  .buttons {
+    position: static;
+  }
+}
+@media screen and (min-width: 900px) and (max-width: 1200px) {
+  .broadRange {
+    margin: 7rem 2rem;
+  }
+  .item h1 {
+    width: 58%;
+  }
+}

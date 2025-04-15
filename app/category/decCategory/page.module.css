@@ -1,0 +1,203 @@
+@keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.category-descrption {
+  padding: 5rem 0rem;
+  opacity: 0;
+  animation: opacity 1s forwards; 
+}
+.row {
+  justify-content: space-between;
+}
+.images img {
+  margin-top: 2rem;
+  width: 90%;
+}
+.caption h2 {
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #15141c;
+  font-size: 28px;
+  line-height: 1.5em;
+  letter-spacing: -0.02em;
+  word-wrap: break-word;
+  margin-top: 1rem;
+}
+.caption h3 {
+  text-transform: uppercase;
+  color: #0d639d;
+  font-size: 20px;
+  line-height: 1.8em;
+  letter-spacing: -0.02em;
+  word-wrap: break-word;
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 400;
+  margin-top: 1rem;
+  width: 68%;
+}
+.caption p {
+  font-family: segoe ui light;
+  line-height: 2em;
+  font-weight: 500;
+}
+.buttons {
+  border: 1px solid #ccc;
+  padding: 1rem;
+  height: 320px;
+}
+.buttons .stock {
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #0d639d;
+  font-size: 18px;
+}
+.buttons .row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.row .title {
+  width: 30%;
+}
+.title .span {
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 500;
+}
+.row .quantity {
+  width: 60%;
+}
+.buttons .file {
+  margin-top: 1rem;
+  width: 100%;
+  border: 0;
+  padding: 10px 0px;
+  font-family: "Space Grotesk", sans-serif;
+  text-transform: uppercase;
+  background-color: #003f91;
+  color: #fff;
+}
+.buttons .tell,
+.message {
+  margin-top: 1rem;
+}
+.file span {
+  margin-left: 1rem;
+}
+.descrption {
+  padding: 0rem 7rem;
+  padding-top: 5rem;
+}
+.descrption h3 {
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #0d639d;
+  font-size: 40px;
+  line-height: 1em;
+  letter-spacing: -0.02em;
+  margin: 25px 0px;
+  -ms-word-wrap: break-word;
+  word-wrap: break-word;
+}
+.descrption span {
+  font-family: segoe ui light;
+  line-height: 2em;
+  font-weight: 600;
+}
+.descrption ul {
+  margin-top: 1rem;
+}
+.descrption ul li {
+  list-style-type: circle;
+  font-family: segoe ui light;
+  line-height: 2em;
+  font-weight: 700;
+}
+/* RelatedProduct */
+.related-products {
+  padding: 5rem 7rem;
+}
+.related-products h3 {
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #0d639d;
+  font-size: 40px;
+  line-height: 1em;
+  letter-spacing: -0.02em;
+  margin: 25px 0px;
+  -ms-word-wrap: break-word;
+  word-wrap: break-word;
+}
+@media screen and (max-width: 700px) {
+  .category-descrption {
+    padding: 1rem;
+  }
+  .images img {
+    width: 100%;
+    margin-bottom: 2rem;
+    margin-top: 0;
+  }
+  .descrption {
+    padding: 5rem 1rem;
+  }
+  .buttons {
+    width: 100%;
+  }
+  .related-products {
+    padding: 1rem;
+  }
+  .caption h3 {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 700px) and (max-width: 1300px) {
+  .category-descrption {
+    padding: 1rem;
+  }
+  .descrption {
+    padding: 5rem 1rem;
+  }
+  .caption h2 {
+    font-size: 40px;
+  }
+  .caption p {
+    font-size: 15px;
+  }
+  .images img {
+    margin-top: 5rem;
+    width: 100%;
+  }
+  .related-products {
+    padding: 1rem;
+  }
+  .caption h3 {
+    width: 80%;
+  }
+  .caption
+  {
+    width: 50%;
+  }
+  .images
+  {
+    width: 50%;
+  }
+  .images img
+  {
+    margin-top: 0;
+    width: 80%;
+  }
+  .buttons {
+    width: 50%;
+  }
+  .row {
+    justify-content: center;
+  }
+}

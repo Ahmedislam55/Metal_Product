@@ -1,0 +1,158 @@
+.itemRange {
+  margin: 7rem;
+}
+.items p {
+  font-family: Lato, sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: -0.02em;
+  display: inline-flex;
+  vertical-align: middle;
+  flex-wrap: wrap;
+  color: #0d639d;
+  position: relative;
+  margin-top: 5rem;
+}
+.items p::before {
+  position: absolute;
+  content: "______";
+  color: #0d639d;
+  left: 100%;
+  margin-left: 0.8rem;
+  top: -5px;
+  font-weight: 500;
+}
+.item h1 {
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #15141c;
+  font-size: 60px;
+  line-height: 1em;
+  letter-spacing: -0.02em;
+  margin: 25px 0;
+  -ms-word-wrap: break-word;
+  word-wrap: break-word;
+  width: 50%;
+}
+.item
+{
+    position: relative;
+    margin-bottom: 1rem;
+}
+.row
+{
+    display: flex;
+    justify-content: space-between;
+}
+.images
+{
+  width: 100%;
+  margin: auto;
+}
+.cardHeader .image
+{
+    width: 100%;
+    transition: all 0.5s;
+}
+.card
+{
+    width: 32%;
+    border-radius: 0;
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+    padding: 0;
+}
+.cardHeader
+{
+    overflow: hidden;
+    background-color: #fff;
+    border-radius: 0;
+}
+.cardBody .title
+{
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #15141c;
+  font-size: 25px;
+  margin-top: 2rem;
+}
+.cardBody p
+{
+  font-size: 15px;
+  font-family: segoe ui light;
+  text-align: center;
+  padding: 1rem;
+}
+.card .buttonCard
+{
+  width: 40%;
+  margin: auto;
+  margin-bottom: 2rem;
+  border: 0;
+  background-color: #0d639d;
+  padding: 10px;
+}
+.buttonCard a
+{
+  text-decoration: none;
+  color: #fff;
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+@media screen and (max-width: 500px) {
+  .itemRange {
+    margin: 7rem 2rem;
+  }
+  .item h1 {
+    width: 100%;
+    font-size: 30px;
+  }
+  .images {
+    width: 100%;
+  }
+  .card
+  {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 500px) and (max-width: 700px) {
+  .itemRange {
+    margin: 7rem 2rem;
+  }
+  .item h1 {
+    width: 100%;
+    font-size: 50px;
+  }
+  .images {
+    width: 100%;
+  }
+  .card
+  {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 700px) and (max-width: 900px) {
+  .itemRange {
+    margin: 7rem 2rem;
+  }
+  .item h1 {
+    width: 80%;
+  }
+  .card
+  {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 900px) and (max-width: 1200px) {
+  .itemRange {
+    margin: 7rem 2rem;
+  }
+  .item h1 {
+    width: 58%;
+  }
+}

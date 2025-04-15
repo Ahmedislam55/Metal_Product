@@ -1,0 +1,192 @@
+.section-contact
+{
+    margin: 5rem 0rem;
+}
+.caption {
+  width: 50%;
+  padding-left: 7rem;
+}
+.caption .parg {
+  position: relative;
+  font-family: Lato, sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: -0.02em;
+  display: inline-flex;
+  vertical-align: middle;
+  flex-wrap: wrap;
+  position: relative;
+  color: #0d639d;
+  margin: 0 0 26px;
+}
+.caption .parg::after {
+  content: "_______";
+  position: absolute;
+  left: 8rem;
+  top: -0.3rem;
+}
+.caption h3 {
+  font-family: "Space Grotesk", sans-serif !important;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #15141c;
+  font-size: 45px;
+  line-height: 1.1111111111em;
+  letter-spacing: -0.02em;
+  margin: 25px 0;
+  -ms-word-wrap: break-word;
+  word-wrap: break-word;
+}
+.title {
+  font-family: Lato, sans-serif;
+  font-size: 23px;
+  line-height: 30px;
+  color: #15141c;
+  margin: 25px 0px;
+}
+.items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.item {
+  width: 50%;
+  margin: 1rem 0;
+}
+.item span {
+  color: #15141c;
+  font-family: lATO;
+  font-size: 18px;
+  font-weight: 700;
+  display: block;
+}
+.item a {
+  text-decoration: none;
+  display: block;
+  color: #616161;
+  font-size: 15px;
+  line-height: 2rem;
+}
+.item .icon {
+  margin-top: 1rem;
+  margin-right: 1rem;
+  color: #0d639d;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+.icon:hover {
+  color: #c1c1c1;
+}
+.contact-form {
+  width: 50%;
+}
+/* From Uiverse.io by DavidTM96 */
+.form {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  font-family: inherit;
+  gap: 10px;
+  padding-inline: 2em;
+  padding-bottom: 0.4em;
+  background-color: #171717;
+ }
+
+.form-heading {
+  text-align: center;
+  margin: 2em;
+  color: #0d639d;
+  font-size: 25px;
+  background-color: transparent;
+  align-self: center;
+  font-family: "Space Grotesk", sans-serif !important;
+  text-transform: uppercase;
+}
+
+.form-field {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap:1em;
+  border-radius: 5px;
+  padding: 0.6em;
+  border: none;
+  outline: none;
+  color: white;
+  background-color: #171717;
+  box-shadow: inset 2px 5px 10px rgb(5, 5, 5);
+  margin-bottom: 1rem;
+}
+
+.input-field {
+  background: none;
+  border: none;
+  outline: none;
+  width: 100%;
+  color: #ccd6f6;
+  padding-inline: 1em;
+}
+
+.sendMessage-btn {
+  cursor: pointer;
+  margin-bottom: 3em;
+  padding: 1em;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  color: #0d639d;
+  font-weight: bold;
+  outline: 1px solid #0d639d;
+  transition: all ease-in-out 0.3s;
+  font-family: "Space Grotesk", sans-serif;
+  text-transform: uppercase;
+}
+
+.sendMessage-btn:hover {
+  transition: all ease-in-out 0.3s;
+  background-color: #0d639d;
+  color: #000;
+  cursor: pointer;
+  box-shadow: inset 2px 5px 10px rgb(5, 5, 5);
+}
+
+.form-card1 {
+  transition: all 0.3s;
+}
+
+.form-card2 {
+  border-radius: 0;
+  transition: all 0.2s;
+}
+
+.form-card2:hover {
+  transform: scale(0.98);
+  border-radius: 20px;
+}
+@media screen and (max-width:800px) {
+    .caption {
+        width: 100%;
+        padding-left: 2rem;
+        margin-bottom: 2rem;
+    }
+    .contact-form {
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+    .item {
+        width: 100%;
+    }
+}
+@media screen and (min-width:800px) and (max-width:1200px) {
+    .caption {
+        padding-left: 1.5rem;
+        width: 60%;
+    }
+    .contact-form {
+        width: 40%;
+    }
+}

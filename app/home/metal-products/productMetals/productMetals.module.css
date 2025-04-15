@@ -1,0 +1,130 @@
+.cardsMetal {
+  margin: 2rem 1rem;
+  overflow: hidden;
+}
+.row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.row .item {
+  display: flex;
+  background-color: #f9f9f9;
+  position: relative;
+  margin: 0 10px; /* يضيف مسافة على الجانبين */
+  width: calc(33.333% - 20px); /* يجعل العناصر متساوية */
+}
+.caption {
+  position: absolute;
+  z-index: 99;
+  margin-left: 4rem;
+  width: 55%;
+  top: 2.5rem;
+}
+.caption h2 {
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #15141c;
+  font-size: 30px;
+  line-height: 1em;
+  letter-spacing: -0.01em;
+  -ms-word-wrap: break-word;
+  word-wrap: break-word;
+}
+.caption span {
+  color: #0d639d;
+}
+.buttons {
+  position: relative;
+  z-index: 9;
+}
+.row .button {
+  background-color: transparent;
+  border: none;
+  font-family: Lato, sans-serif;
+  font-size: 17px;
+  font-weight: 700;
+  transition: background-color 1s;
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+.row .button a {
+  text-decoration: none;
+  color: #15141c;
+}
+.row .icon .faAngleRight {
+  margin-top: 2px;
+  color: #0d639d;
+  width: 25px;
+  transition: all 0.5s;
+}
+.row .icon {
+  background-color: transparent;
+  border: none;
+  border-left: 0px;
+}
+.icons {
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+.faAngleRighttwo {
+  color: #0d639d;
+  transform: translateX(-60px);
+  transition: all 0.5s;
+}
+.row .buttons :hover .faAngleRight {
+  transform: translateX(50px);
+}
+.row .buttons :hover .faAngleRighttwo {
+  transform: translateX(-15px);
+}
+.image1
+{
+  width: 100%;
+}
+.image1:hover{
+  transform: scale(1.05);
+}
+.image1 {
+  transition: all 1s;
+}
+@media screen and (max-width:500px) {
+  .row .item
+  {
+      width: 100%;
+      margin-bottom: 1rem;
+      padding-bottom: 2rem;
+  } 
+  .caption {
+    margin-left: 0rem;
+  }
+  .caption h2 
+  {
+    font-size: 20px;
+  }
+}
+@media screen and (min-width:500px) and (max-width: 800px) {
+  .row .item
+  {
+      width: 100%;
+      margin-bottom: 1rem;
+  } 
+  
+}
+@media screen and (min-width:800px) and (max-width:1300px) {
+    .row .item
+    {
+        width: 100%;
+        margin-bottom: 1rem;
+    } 
+    .caption {
+        position: absolute;
+        z-index: 99;
+        margin-left: 4rem;
+        width: 30%;
+        top:60%;
+      } 
+}

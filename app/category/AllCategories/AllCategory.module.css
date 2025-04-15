@@ -1,0 +1,253 @@
+.categories {
+  padding: 5rem 7rem;
+}
+.categories h2 {
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #15141c;
+  font-size: 60px;
+  line-height: 1em;
+  letter-spacing: -0.02em;
+  margin: 25px 0px;
+  -ms-word-wrap: break-word;
+  word-wrap: break-word;
+  width: 50%;
+  margin-bottom: 4rem;
+}
+.row {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* category */
+.category {
+  width: 81%;
+}
+.row {
+  display: flex;
+  justify-content: center;
+}
+.images a {
+  text-decoration: none;
+}
+.images {
+  width: 33.33333%;
+  position: relative;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 15px;
+  gap: 10px;
+  margin-bottom: 2rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: solid 0px #ccc;
+  box-shadow: 0px 6px 10px #ccc;
+  border: 0;
+}
+.card-header {
+  background-color: transparent;
+  border: 0;
+}
+.card-img {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+.card-title h4 {
+  font-size: 15px;
+  font-weight: 700;
+  color: #0d639d;
+  font-family: "Space Grotesk", sans-serif;
+}
+.card-title span {
+  color: #15141c;
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 700;
+  font-size: 0.9rem;
+}
+.descrption p {
+  font-size: 12px;
+  font-family: segoe ui light;
+  font-weight: 600;
+}
+.descrption {
+  height: 70px;
+  overflow: hidden;
+}
+.quantityrow {
+  display: flex;
+  justify-content: space-between;
+  align-self: center;
+  width: 100%;
+}
+.quantityrow .quantity {
+  width: 80%;
+}
+.quantityrow .file {
+  width: 15%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 0;
+  background-color: #003f91;
+}
+.upload {
+  background-color: transparent;
+  border: 0;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+}
+/* Massage Succes */
+.successMessage {
+  background-color: #d4edda;
+  color: #155724;
+  border: 1px solid #c3e6cb;
+  padding: 10px 0px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  text-align: center;
+  font-weight: bold;
+  animation: fadeInOut 2s ease-in-out;
+  position: absolute;
+  top: -3rem;
+  width: 93.5%;
+  font-family: "Space Grotesk", sans-serif;
+}
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  20% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+}
+
+/* sub-category */
+.sub-category {
+  width: 17.5%;
+}
+.scroll {
+  max-height: 950px;
+  overflow-y: auto;
+}
+.items a {
+  text-decoration: none;
+}
+.sub-category {
+  text-align: center;
+  padding-top: 1rem;
+  padding-bottom: 0rem;
+  border: solid 0px #ccc;
+  box-shadow: 0px 6px 10px #ccc;
+  margin-left: 1rem;
+  height: 1035px;
+}
+.sub-category h3 {
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #15141c;
+  font-size: 20px;
+}
+.image img {
+  transition: all 1s;
+}
+.image img:hover {
+  transform: scale(1.1);
+}
+.title p {
+  margin-top: 1rem;
+  font-size: 15px;
+  font-weight: 600;
+  color: #15141c;
+  font-family: "Space Grotesk", sans-serif;
+}
+.items hr {
+  color: #15141c;
+}
+.icons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.phone {
+  width: 49%;
+}
+.message {
+  width: 49%;
+}
+/* loading */
+.loader {
+  width: 20px;
+  height: 20px;
+  border: 3px solid #fff;
+  border-top: 3px solid #007bff;
+  border-radius: 50%;
+  animation: spin 0.7s linear infinite;
+  display: inline-block;
+  margin-top: 8px;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .categories {
+    padding: 5rem 1rem;
+  }
+  .categories h2 {
+    width: 100%;
+  }
+  .category {
+    width: 100%;
+  }
+  .images {
+    width: 100%;
+  }
+  .sub-category {
+    width: 100%;
+  }
+  .sub-category {
+    margin-left: 0;
+  }
+}
+@media screen and (min-width: 800px) and (max-width: 1300px) {
+  .categories {
+    padding: 5rem 1rem;
+  }
+  .categories h2 {
+    width: 100%;
+  }
+  .category {
+    width: 100%;
+  }
+  .images {
+    width: 50%;
+  }
+  .sub-category {
+    width: 100%;
+  }
+  .sub-category {
+    margin-left: 0;
+  }
+}

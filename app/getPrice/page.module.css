@@ -1,0 +1,95 @@
+@keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.wrapper {
+  padding: 2rem 7rem;
+  animation: opacity 1s forwards;
+}
+.heading {
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #15141c;
+  font-size: 60px;
+  margin: 25px 0;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form .input {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  width: 100%;
+}
+
+.productList {
+  margin: 10px 0;
+  padding-left: 20px;
+  color: #333;
+}
+
+.submitBtn {
+  margin-top: 1rem;
+  width: 150px;
+  height: 50px;
+  border: 0;
+  font-family: "Space Grotesk", sans-serif;
+  text-transform: uppercase;
+  background-color: #003f91;
+  color: #fff;
+}
+.thankyou {
+  font-size: 30px;
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #003f91;
+  text-align: center;
+  margin-top: 4rem;
+}
+.phoneRow {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.countrySelect {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 20px;
+  min-width: 110px;
+  background: white;
+}
+
+.phoneInput {
+  flex: 1;
+  padding: 0.5rem;
+  border: 0 !important;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.error {
+  color: red;
+  font-size: 0.85rem;
+  margin-top: -0.5rem;
+  margin-bottom: 0.5rem;
+}
+@media screen and (max-width: 900px) {
+  .wrapper {
+    padding: 2rem 2rem;
+  }
+}

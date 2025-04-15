@@ -1,0 +1,219 @@
+.qodef-header-navigation {
+  display: flex;
+  position: relative;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.qodef-nav-list {
+  display: flex;
+  margin-top: 15px;
+}
+.qodef-nav-list li {
+  padding-right: 3rem;
+  font-size: 17px;
+  font-weight: 600;
+  position: relative;
+  list-style-type: none;
+  text-transform: uppercase;
+}
+.qodef-nav-list li a {
+  color: #15141c;
+  text-decoration: none;
+}
+
+/* تنسيق النص الرئيسي مع الشرطة */
+.qodef-menu-item-text {
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.qodef-menu-item-text::before {
+  position: absolute;
+  content: "/";
+  left: -11px;
+  top: -1px;
+  color: #003151;
+  clip-path: inset(100% 0 0 0); /* مخفي افتراضيًا */
+  transition: clip-path 0.4s ease-out;
+}
+/* عند الـ hover أو الـ active للنص الرئيسي */
+.qodef-menu-item-text:hover::before,
+.qodef-nav-item.active .qodef-menu-item-text::before {
+  clip-path: inset(0 0 0 0);
+}
+/* Button for moblie */
+.moblieIcon {
+  display: none;
+}
+.menuButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 13%;
+  color: #15141c;
+  width: 3.5em;
+  height: 3.5em;
+  border-radius: 0;
+  transition: all 0.3s;
+}
+
+.menuButton:hover {
+  border: 1px solid white;
+}
+.menuButton:hover span {
+  border: 1px solid white;
+  background: #0d639d;
+}
+.menuButton:active {
+  color: #666;
+  box-shadow: inset 4px 4px 12px #c5c5c5, inset -4px -4px 12px #ffffff;
+}
+
+.menuButton input[type="checkbox"] {
+  -webkit-appearance: none;
+  display: none;
+  visibility: hidden;
+}
+
+.menuButton span {
+  width: 30px;
+  height: 4px;
+  background: #15141c;
+  border-radius: 100px;
+  transition: 0.3s ease;
+}
+
+.menuButton input[type]:checked ~ span.top {
+  transform: translateY(290%) rotate(45deg);
+  width: 40px;
+}
+
+.menuButton input[type]:checked ~ span.bot {
+  transform: translateY(-270%) rotate(-45deg);
+  width: 40px;
+  box-shadow: 0 0 10px #495057;
+}
+.menuButton input[type]:checked ~ span.mid {
+  transform: translateX(-20px);
+  opacity: 0;
+}
+/* Navlinks */
+.qodef-mobile-nav-list {
+  padding-top: 2rem;
+  margin-left: -2rem;
+  display: none;
+  }
+.qodef-mobile-nav-list li a {
+  text-decoration: none;
+  color: #15141c;
+  font-weight: 700;
+  font-size: 17px;
+  padding-bottom: 10px;
+}
+.qodef-mobile-nav-list .active .qodef-menu-item-text::before
+{
+  clip-path: inset(0 0 0 0);
+}
+/* search */
+.InputContainer {
+  position: absolute;
+  right: 4rem;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  padding-left: 15px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.075);
+}
+
+.input {
+  width: 170px;
+  height: 100%;
+  border: 0;
+  outline: none;
+  font-size: 0.9em;
+  caret-color: #2563eb;
+}
+.labelforsearch {
+  cursor: text;
+  padding: 0px 12px;
+}
+
+.searchIcon {
+  width: 13px;
+}
+
+.border {
+  height: 40%;
+  width: 1.3px;
+  background-color: rgb(223, 223, 223);
+}
+
+.micIcon {
+  width: 12px;
+}
+
+.micButton {
+  padding: 0px 15px 0px 12px;
+  border: none;
+  background-color: transparent;
+  height: 40px;
+  cursor: pointer;
+  transition-duration: 0.3s;
+}
+
+.searchIcon path {
+  fill: rgb(114, 114, 114);
+}
+
+.micIcon path {
+  fill: #0d639d;
+}
+
+.micButton:hover {
+  background-color: rgb(255, 230, 230);
+  transition-duration: 0.3s;
+}
+
+
+@media screen and (max-width: 1000px) {
+  .qodef-nav-list {
+    display: none;
+  }
+  .qodef-page-header-inner {
+    padding: 2rem ;
+  }
+  .moblieIcon {
+    display: block;
+    position: absolute;
+    top: -1rem;
+    right: -7rem;
+  }
+  .qodef-mobile-nav-list {
+    display: block;
+  }
+  .InputContainer
+  {
+    display: none;
+  }
+}
+@media screen and (min-width: 1000px) and (max-width: 1250px) {
+  .qodef-nav-list li {
+    padding-right:  2rem;
+  }
+  .InputContainer
+  {
+    right: 1rem;
+  }
+  .input {
+    width: 120px;
+  }
+
+}

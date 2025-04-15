@@ -1,0 +1,57 @@
+.menuIcon {
+  cursor: pointer;
+  font-size: 1rem;
+  color: #15141c;
+}
+.menuIcon span
+{
+    color: #15141c;
+    text-transform: uppercase;
+    font-size: 17px;
+    font-weight: 600;
+}
+.linksBox {
+  position: absolute;
+  top: 4.5rem;
+  background-color: #fff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+  width: 200px;
+  padding: 20px;
+  right:  15rem;
+}
+
+.linksList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 1rem;
+  color: #15141c;
+}
+
+.linksList li {
+  margin: 15px 0;
+}
+
+.linksList li a {
+  text-decoration: none;
+  color: #333;
+  font-size: 1.1rem;
+  transition: color 0.3s;
+}
+
+.linksList li a:hover {
+  color: #007bff;
+}
+@media screen and (max-width:1000px) {
+    .menuIcon {
+        display: none;
+    }
+    .linksBox {
+      display: none;
+    }
+    .linksList {
+      display: none;
+    }
+}

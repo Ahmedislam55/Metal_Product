@@ -1,0 +1,76 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  font-family: inherit;
+  gap: 10px;
+  padding-inline: 2em;
+  padding-bottom: 0.4em;
+}
+
+.form-heading {
+  text-align: center;
+  margin-top: 2em;
+  color: #fff;
+  font-size: 35px;
+  background-color: transparent;
+  align-self: center;
+  font-family: "Space Grotesk", sans-serif !important;
+  text-transform: uppercase;
+  padding-top: 2rem;
+}
+
+.form-field {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+  padding: 0.6em;
+  outline: none;
+  color: white;
+}
+.input-field {
+  background: none;
+  outline: none;
+  width: 100%;
+  color: #d5dae2;
+  padding: 0.5em;
+  border-radius: 5px;
+}
+
+.sendMessage-btn {
+  cursor: pointer;
+  margin-bottom: 3em;
+  padding: 1em;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  color: #fff;
+  font-weight: bold;
+  outline: 1px solid #003151;
+  transition: all ease-in-out 0.3s;
+  font-family: "Space Grotesk", sans-serif;
+  text-transform: uppercase;
+  width: 30%;
+  margin-left: 0.8rem;
+}
+
+/* .sendMessage-btn:hover {
+  transition: all ease-in-out 0.3s;
+  background-color: #003151;
+  color: #000;
+  cursor: pointer;
+  box-shadow: inset 2px 5px 10px rgb(5, 5, 5);
+} */
+
+.form-card1 {
+  transition: all 0.3s;
+}
+
+.form-card2 {
+  border-radius: 0;
+  transition: all 0.2s;
+}
+
+
